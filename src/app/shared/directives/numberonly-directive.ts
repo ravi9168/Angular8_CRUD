@@ -4,7 +4,7 @@ import { DecimalPipe } from '@angular/common';
 @Directive({
   selector: '[appNumberonlyDirective]'
 })
-export class NumberonlyDirectiveDirective {
+export class NumberonlyDirective {
 
   private el: any;
 

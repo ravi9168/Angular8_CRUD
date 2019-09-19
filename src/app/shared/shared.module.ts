@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PipesPipe } from './pipes.pipe';
-import { DirectivesDirective } from './directives.directive';
-import { NumberonlyDirectiveDirective } from './directives/numberonly-directive.directive';
-import { CurrencyPipePipe } from './pipes/currency-pipe.pipe';
+
+import { NumberonlyDirective } from './directives/numberonly-directive';
+import { CurrencyPipe } from './pipes/currency-pipe';
 
 
 
 @NgModule({
-  declarations: [PipesPipe, DirectivesDirective, NumberonlyDirectiveDirective, CurrencyPipePipe],
+  declarations: [ NumberonlyDirective, CurrencyPipe],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[NumberonlyDirective,CurrencyPipe]
 })
 export class SharedModule { }

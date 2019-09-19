@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'currencyPipe'
 })
-export class CurrencyPipePipe implements PipeTransform {
+export class CurrencyPipe implements PipeTransform {
 
   private decimal_separator:string;
 
